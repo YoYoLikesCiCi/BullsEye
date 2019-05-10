@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func showAlert(){
         let alert = UIAlertController(title: "Hello, World", message: "This is my first app!", preferredStyle: .alert)
         
@@ -24,6 +24,5 @@ class ViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
     }
-
 }
 
