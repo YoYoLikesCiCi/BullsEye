@@ -12,6 +12,9 @@
 		1141F9C322844A75003EEBB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1141F9C122844A75003EEBB5 /* Main.storyboard */; };
 		1141F9C522844A75003EEBB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1141F9C422844A75003EEBB5 /* Assets.xcassets */; };
 		1141F9C822844A75003EEBB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1141F9C622844A75003EEBB5 /* LaunchScreen.storyboard */; };
+		1141F9D02286983E003EEBB5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141F9CF2286983E003EEBB5 /* AboutViewController.swift */; };
+		1141F9D62286A474003EEBB5 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 1141F9D52286A474003EEBB5 /* BullsEye.html */; };
+		1141F9D92286A91F003EEBB5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1141F9D82286A91F003EEBB5 /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		1141F9C422844A75003EEBB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1141F9C722844A75003EEBB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1141F9C922844A75003EEBB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1141F9CF2286983E003EEBB5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		1141F9D52286A474003EEBB5 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = BullsEye.html; path = "../../../Downloads/iOS_Apprentice_v7.0 (Updated for Swift 4.2 & iOS 12)/Source Code/getting-started/Resources/BullsEye.html"; sourceTree = "<group>"; };
+		1141F9D82286A91F003EEBB5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1141F9D92286A91F003EEBB5 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				1141F9BC22844A75003EEBB5 /* BullsEye */,
 				1141F9BB22844A75003EEBB5 /* Products */,
+				1141F9D72286A91F003EEBB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +62,24 @@
 		1141F9BC22844A75003EEBB5 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				1141F9D52286A474003EEBB5 /* BullsEye.html */,
 				1141F9BD22844A75003EEBB5 /* AppDelegate.swift */,
 				1141F9BF22844A75003EEBB5 /* ViewController.swift */,
+				1141F9CF2286983E003EEBB5 /* AboutViewController.swift */,
 				1141F9C122844A75003EEBB5 /* Main.storyboard */,
 				1141F9C422844A75003EEBB5 /* Assets.xcassets */,
 				1141F9C622844A75003EEBB5 /* LaunchScreen.storyboard */,
 				1141F9C922844A75003EEBB5 /* Info.plist */,
 			);
 			path = BullsEye;
+			sourceTree = "<group>";
+		};
+		1141F9D72286A91F003EEBB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1141F9D82286A91F003EEBB5 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1141F9C822844A75003EEBB5 /* LaunchScreen.storyboard in Resources */,
+				1141F9D62286A474003EEBB5 /* BullsEye.html in Resources */,
 				1141F9C522844A75003EEBB5 /* Assets.xcassets in Resources */,
 				1141F9C322844A75003EEBB5 /* Main.storyboard in Resources */,
 			);
@@ -135,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1141F9D02286983E003EEBB5 /* AboutViewController.swift in Sources */,
 				1141F9C022844A75003EEBB5 /* ViewController.swift in Sources */,
 				1141F9BE22844A75003EEBB5 /* AppDelegate.swift in Sources */,
 			);
