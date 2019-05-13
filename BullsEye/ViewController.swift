@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     var round = 0
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         
         let thumbImageNormal = UIImage(named:"SliderThumb-Normal")!
         slider.setThumbImage(thumbImageNormal, for: .normal)
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
         let trackRightImage = UIImage(named:"SliderTrackRight")!
         let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
         slider.setMaximumTrackImage((trackRightResizable), for: .normal)
-        super.viewDidLoad()
+        
         
         startNewGame()
         // Do any additional setup after loading the view.
@@ -111,7 +112,6 @@ class ViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
         
-//        startNewRound()
     }
     
     
